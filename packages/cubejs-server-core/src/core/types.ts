@@ -125,6 +125,7 @@ export type DatabaseType =
   | 'duckdb'
   | 'ksql'
   | 'vertica'
+  | 'spark' // [DataOS fork] Added Spark database type
   | 'databricks-jdbc';
 
 export type ContextToAppIdFn = (context: RequestContext) => string | Promise<string>;
